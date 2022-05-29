@@ -332,7 +332,7 @@ img{
   display: inline-block;
   background-color: #FDD6BA;
 }
-.process-container-item:nth-child(3) .solid-span{
+.process-container-item:last-child .solid-span{
   display: none;
   border: 1px solid red;
 }
@@ -387,4 +387,43 @@ img{
 .footer-container{
   background-color: #2C343E;
   padding: 47px 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-container-menu{
+  display: flex;
+  align-items: center;
+}
+.footer-logo-link{
+  margin-right: 103px;
+  text-decoration: none;
+}
+.footer-menu-list{
+  display: flex;
+  list-style-type: none;
+}
+.footer-menu-item:nth-child(2){
+  margin: 0 32px;
+}
+.footer-menu-link{
+  text-decoration: none;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888F;
+}
+.footer-social-list{
+  display: flex;
+  list-style-type: none;
+}
+.footer-social-item:nth-child(2){
+  margin: 0 24px;
+}
+.footer-social-link{
+  text-decoration: none;
 }
