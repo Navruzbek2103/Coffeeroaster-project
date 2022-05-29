@@ -1,0 +1,285 @@
+/* barlow-regular - latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/barlow-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* barlow-700 - latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/barlow-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/barlow-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ______________________________________________________________ */
+
+/* fraunces-regular - latin */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/fraunces-v22-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/fraunces-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fraunces-900 - latin */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('../fonts/fraunces-v22-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/fraunces-v22-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* _____________________________________________________________ */
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+ul, ol{
+  margin: 0;
+  padding: 0;
+}
+img{
+  vertical-align: middle;
+  object-fit: cover;
+}
+.container{
+  width: 1320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header-container{
+  display: flex;
+  align-items: center;
+  padding: 43px 0;
+}
+.header-container-link{
+  margin-right: auto;
+  text-decoration: none;
+}
+.header-container-img{
+  object-fit: cover;
+  width: 236px;
+  height: 26px;
+}
+.nav-list{
+  display: flex;
+  list-style-type: none;
+}
+.nav-item{
+  margin: 0 16px;
+}
+.nav-item:nth-child(3){
+  margin-right: 0;
+}
+.nav-link{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888F;
+  text-decoration-line: none;
+}
+.hero-container{
+  background-image: url("./../images/hero-img.jpg");
+  padding: 117px 85px;
+  border-radius: 10px;
+}
+.hero-container-inner{
+  width: 493px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hero-container-title{
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+}
+.hero-container-text{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  opacity: 0.8;
+  margin-bottom: 56px;
+}
+.create-link{
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FEFCF7;
+  text-decoration: none;
+  background: #0E8784;
+  border-radius: 6px;
+  padding: 15px 31px;
+}
+
+.collection{
+  padding: 136px 0;
+}
+.collection-container{
+  background-image: url("./../images/our-collection.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: -85px;
+  background-position-x: -5px;
+  width: 1110px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.collection-list{
+  display: flex;
+  list-style-type: none;
+}
+.collection-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 255px;
+  margin-right: 30px;
+}
+.collection-img{
+  margin-bottom: 68px;
+}
+.collection-item-title{
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #333D4B;
+  margin-bottom: 24px;
+}
+.collection-item-text{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #333D4B;
+}
+.choice{
+  padding: 64px 0 200px 0;
+}
+.choice-container{
+  position: relative;
+  background-color: #293039;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 210px 0;
+}
+.choice-container-content{
+  width: 540px;
+}
+.choice-content-title{
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+}
+.choice-content-text{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #FEFCF7;
+  opacity: 0.8;
+  margin-bottom: 86px;
+}
+.choice-container-list{
+  position: absolute;
+  left: auto;
+  bottom: -153px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 1110px;
+}
+.choice-container-item{
+  width: 350px;
+  background-color: #0E8784;
+  border-radius: 8px;
+  /* padding: 47px; */
+  padding: 72px 47px 47px 47px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.choice-item-title{
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 56px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #FEFCF7;
+}
+.choice-item-text{
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #FEFCF7;
+}
+.choice-container-item::before{
+  content: "";
+  width: 72px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+}
+.choice-container-item:nth-child(1)::before{
+  background-image: url("./../images/best-quality.svg");
+}
+.choice-container-item:nth-child(2)::before{
+  background-image: url("./../images/exclusive-benefits.svg");
+}
+.choice-container-item:nth-child(3)::before{
+  background-image: url("./../images/free-shipping.svg");
+}
